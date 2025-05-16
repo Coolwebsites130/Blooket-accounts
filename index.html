@@ -14,32 +14,24 @@
       margin: 0;
     }
 
-    .top-left-link {
+    .top-links {
       position: absolute;
       top: 20px;
-      left: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .top-link {
       font-size: 16px;
       color: #4A90E2;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .top-left-link:hover {
-      text-decoration: underline;
-      color: #357ABD;
-    }
-
-    .rate-link {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 16px;
-      color: #4A90E2;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .rate-link:hover {
+    .top-link:hover {
       text-decoration: underline;
       color: #357ABD;
     }
@@ -60,8 +52,12 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 40px;
       margin-top: 40px;
+    }
+
+    .btn-wrapper {
+      text-align: center;
     }
 
     .btn {
@@ -76,6 +72,7 @@
       min-width: 150px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: inline-block;
     }
 
     .btn:hover {
@@ -97,38 +94,58 @@
       font-size: 22px;
       color: #333;
     }
+
+    .support-section {
+      margin-top: 60px;
+    }
+
+    .support-section h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
 
-  <a class="top-left-link" href="https://docs.google.com/document/d/13LRrB780SGw7bdghzADf1sSFnZlgs8bq9ONtYy9Suco/edit?usp=sharing" target="_blank">Who made the website)</a>
-
-  <a class="rate-link" href="https://forms.gle/gch6J4sBRVspAFZe7" target="_blank">Rate our website)</a>
+  <div class="top-links">
+    <a class="top-link" href="https://docs.google.com/document/d/13LRrB780SGw7bdghzADf1sSFnZlgs8bq9ONtYy9Suco/edit?usp=sharing" target="_blank">Who made the website)</a>
+    <a class="top-link" href="https://forms.gle/gch6J4sBRVspAFZe7" target="_blank">Rate our website)</a>
+    <a class="top-link" href="#support">Support</a>
+  </div>
 
   <div class="logo">BA</div>
   <h1>Blooket Accounts for Sale</h1>
 
   <div class="button-container">
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd4057zKhIdxK8YYnjhdumPNHfgDfW9DBR1qljv5CgddMPTbw/viewform?usp=header" target="_blank">
-      Og43)
-    </a>
+    <div class="btn-wrapper">
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd4057zKhIdxK8YYnjhdumPNHfgDfW9DBR1qljv5CgddMPTbw/viewform?usp=header" target="_blank">Og43)</a>
+    </div>
 
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSetRIgUoBs3Ehl1bzUFBhK3sh7EtmQMCprLVVUpB88Wsy1_jQ/viewform?usp=header" target="_blank">
-      UnitAssessment
-    </a>
+    <div class="btn-wrapper">
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSetRIgUoBs3Ehl1bzUFBhK3sh7EtmQMCprLVVUpB88Wsy1_jQ/viewform?usp=header" target="_blank">UnitAssessment</a>
+    </div>
 
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScZK42XtLBtQs12qfarKIyTCIcfAgn2FBQ73Q-7zbt9Aq3ouw/viewform?usp=header" target="_blank">
-      Og45
-    </a>
+    <div class="btn-wrapper">
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScZK42XtLBtQs12qfarKIyTCIcfAgn2FBQ73Q-7zbt9Aq3ouw/viewform?usp=header" target="_blank">Og45</a>
+    </div>
   </div>
 
   <div class="order-text">
     <h2>How to Order</h2>
     <p>
       Click the button for the Blooket account you want. Fill out the form with your details and submit it.
-      Once we get your response, we’ll send your account info to the contact you provided.
+      After that, bring your money to school and we’ll give you the account info in person.
       If you need help or have questions, reach out before placing an order.
     </p>
   </div>
+
+  <div id="support" class="support-section">
+    <h2>Support</h2>
+    <a class="btn" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRmTgRMTRFXPMCrZBzKMmClxwMVppJHdZxnnFQksRnVDNZggtHlVdrMGPQzvPRgFVLpdZRg" target="_blank">
+      Email our support team)
+    </a>
+  </div>
+
 </body>
 </html>
