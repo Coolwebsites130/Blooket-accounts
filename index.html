@@ -6,9 +6,15 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🅱️</text></svg>" />
   <style>
     html, body {
-      overflow-x: hidden; /* disables left-right scrolling */
+      overflow-x: hidden;
       margin: 0;
       padding: 0;
+      max-width: 100vw;
+      position: relative;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
@@ -16,7 +22,6 @@
       background-color: #f9f9f9;
       text-align: center;
       padding: 50px;
-      position: relative;
     }
 
     .top-links {
@@ -25,6 +30,8 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
       padding: 0 20px;
       box-sizing: border-box;
     }
@@ -59,10 +66,14 @@
       flex-wrap: wrap;
       gap: 40px;
       margin-top: 40px;
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
     }
 
     .btn-wrapper {
       text-align: center;
+      max-width: 100%;
     }
 
     .btn {
@@ -78,6 +89,7 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: inline-block;
+      white-space: nowrap;
     }
 
     .btn:hover {
@@ -109,6 +121,13 @@
       margin-bottom: 20px;
       color: #333;
     }
+
+    @media (max-width: 500px) {
+      .top-links {
+        justify-content: center;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -134,9 +153,9 @@
       <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScZK42XtLBtQs12qfarKIyTCIcfAgn2FBQ73Q-7zbt9Aq3ouw/viewform?usp=header" target="_blank">Og45</a>
     </div>
 
-    <!-- NEW BUTTON YOU ASKED FOR -->
+    <!-- Funkybee Button 👇 -->
     <div class="btn-wrapper">
-      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeE2bH1hU0878-cOrMw5aZBMAGDNGxlzTyGj8_FIeWAAi35og/viewform?usp=header" target="_blank">NEW Form 🚀</a>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeE2bH1hU0878-cOrMw5aZBMAGDNGxlzTyGj8_FIeWAAi35og/viewform?usp=header" target="_blank">Funkybee</a>
     </div>
   </div>
 
