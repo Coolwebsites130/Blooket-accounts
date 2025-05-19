@@ -27,7 +27,7 @@
     .top-links {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
       gap: 10px;
       margin-bottom: 20px;
@@ -119,13 +119,20 @@
       margin-bottom: 20px;
       color: #333;
     }
+
+    @media (max-width: 500px) {
+      .top-links {
+        justify-content: center;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="top-links">
     <a class="top-link" href="https://docs.google.com/document/d/13LRrB780SGw7bdghzADf1sSFnZlgs8bq9ONtYy9Suco/edit?usp=sharing" target="_blank">Who made the website)</a>
-    <a class="top-link" href="https://forms.gle/gch6J4sBRVspAFZe7" target="_blank">Rate our website)</a>
+    <a class="top-link" href="https://forms.gle/gch6J4sBRVspAFZe7" target="_blank" style="margin-right: auto;">Rate our website)</a>
   </div>
 
   <div class="logo">BA</div>
