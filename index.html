@@ -24,6 +24,35 @@
       padding: 50px 20px;
     }
 
+    .shutdown-banner {
+      background-color: #ffd966;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px 10px;
+      border-bottom: 2px solid #f4b400;
+      text-align: center;
+      animation: flash 1s infinite alternate;
+      position: relative;
+    }
+
+    @keyframes flash {
+      from { opacity: 1; }
+      to { opacity: 0.6; }
+    }
+
+    .shutdown-banner .close-btn {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+      background: none;
+      border: none;
+      color: #333;
+    }
+
     .top-links {
       width: 100%;
       display: flex;
@@ -129,6 +158,12 @@
   </style>
 </head>
 <body>
+
+  <!-- 🔥 Flashing Dismissible Banner -->
+  <div class="shutdown-banner" id="shutdownBanner">
+    SHUTTING DOWN FOR SUMMER – WE ARE GOING TO 6TH GRADE!
+    <button class="close-btn" onclick="document.getElementById('shutdownBanner').style.display='none'">×</button>
+  </div>
 
   <div class="top-links">
     <a class="top-link" href="https://docs.google.com/document/d/13LRrB780SGw7bdghzADf1sSFnZlgs8bq9ONtYy9Suco/edit?usp=sharing" target="_blank">Who made the website)</a>
